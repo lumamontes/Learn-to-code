@@ -39,14 +39,18 @@
     }
 
   #title {
-      margin: 0px auto;
+      margin: 0px 500px;
       width: 40%;
-      align-self: center;
       text-align: start;
     }
 
     h1 {
       font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    #title p {
+      font-weight:500;
     }
     section {     
       width: 50%;
@@ -75,6 +79,8 @@
       width: 100%;
       border-radius: 5px;
       border: 1px #0000002d solid;
+      outline-color:  hsl(249, 10%, 26%) ;
+ 
     }
   
 
@@ -82,6 +88,7 @@
         color: #070000a8;
         font-weight: 600;
     }
+  
 
     button {
       width: 500px;
@@ -89,6 +96,7 @@
       background-color: rgb(96, 85, 165);  
       color: white;
       box-shadow: 0px 4px 1px 1.5px rgba(0,0,0,0.23);
+      cursor: pointer;
 
             
     }
@@ -98,18 +106,24 @@
       background-color: rgb(56, 204, 140);
       font-weight: bold;
       box-shadow: 0px 4px 1px 1.5px rgba(0,0,0,0.23);
+      transition: 200ms;
 
+    }
+
+    form button:hover {
+      opacity: 75%;
     }
 
     form p {
-      color: grey;
+      color :hsl(246, 25%, 77%);
+      font-size: 12px;
+      margin-top: 25px;
+      font-weight: bold;
+      text-align: center;
     }
-
-
-
-
-
-
+    span {
+      color: hsl(0, 100%, 74%) ;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -137,7 +151,7 @@
 
   <button type="submit">CLAIM YOUR FREE TRIAL</button>
   
-  <p> clicking the button, you are agreeing to our <span> Terms and Services </span></p>
+  <p> By clicking the button, you are agreeing to our <span> Terms and Services </span></p>
 </form>
 
 </section>
@@ -148,5 +162,8 @@
       Coded by <a href="http://github.com/lumamontes">Luma</a>.
     </p>
   </footer>
+
+  <script></script>
+
 </body>
 </html>
