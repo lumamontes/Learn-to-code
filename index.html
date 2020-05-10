@@ -51,10 +51,63 @@
     section {     
       width: 50%;
       margin: 400px;
-      margin: 350px auto;
+      margin: 200px auto;
+
+      
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      width: 500px;
+      height: 500px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: -1px 3px 1px 1.5px rgba(0,0,0,0.23);
+
+
+      
+    }
+    form input, form button, button {
+      padding: 20px 18px;
+      margin-top: 10px;
+      margin-bottom: 4px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px #0000002d solid;
+    }
+  
+
+    form input::placeholder {
+        color: #070000a8;
+        font-weight: 600;
     }
 
-    
+    button {
+      width: 500px;
+      margin-bottom: 20px;
+      background-color: rgb(96, 85, 165);  
+      color: white;
+      box-shadow: 0px 4px 1px 1.5px rgba(0,0,0,0.23);
+
+            
+    }
+
+
+    form button {
+      background-color: rgb(56, 204, 140);
+      font-weight: bold;
+      box-shadow: 0px 4px 1px 1.5px rgba(0,0,0,0.23);
+
+    }
+
+    form p {
+      color: grey;
+    }
+
+
+
+
 
 
     .attribution { font-size: 11px; text-align: center; }
@@ -75,18 +128,17 @@
 </header>
   
   <section class="form">
-  <input type="button" name="submit" value="Try it free 7 days then $20/mo. thereafter"> 
+  <button type="submit"><strong> Try it free 7 days</strong> then $20/mo. thereafter</button>
   <form action="">
   <input type="text" name='name' placeholder='First Name'>
   <input type="text" name='lastname' placeholder='Last Name' >
   <input type="text" name='email' placeholder='Email Address' >
   <input type="text" name='password' placeholder='Password' >
 
+  <button type="submit">CLAIM YOUR FREE TRIAL</button>
   
-  <input type='button' name='submit' value='Claim your free trial'>
-  
+  <p> clicking the button, you are agreeing to our <span> Terms and Services </span></p>
 </form>
-By clicking the button, you are agreeing to our Terms and Services
 
 </section>
 </main>
