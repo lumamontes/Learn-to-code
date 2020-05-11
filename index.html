@@ -124,6 +124,11 @@
     span {
       color: hsl(0, 100%, 74%) ;
     }
+
+    .msg-erro {
+      color: red;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -143,13 +148,28 @@
   
   <section class="form">
   <button type="submit"><strong> Try it free 7 days</strong> then $20/mo. thereafter</button>
-  <form action="">
-  <input type="text" name='name' placeholder='First Name'>
-  <input type="text" name='lastname' placeholder='Last Name' >
-  <input type="text" name='email' placeholder='Email Address' >
-  <input type="text" name='password' placeholder='Password' >
+  <form action="" name='form1'>
 
-  <button type="submit">CLAIM YOUR FREE TRIAL</button>
+  <input 
+  type="text" 
+  name='nome' 
+  placeholder='First Name'>
+  <span class="msg-erro-nome"></span>
+
+
+  <input 
+  type="text" name='lastname'  placeholder='Last Name'>
+  
+  <span class="msg-erro"></span>
+
+  <input type="text" name='email' placeholder='Email Address' >
+  <span class="msg-erro"></span>
+
+  <input type="text" name='senha' placeholder='Password' >
+  <span class="msg-erro"></span>
+
+
+  <button type="submit" name="claim" onclick="return validar()">CLAIM YOUR FREE TRIAL</button>
   
   <p> By clicking the button, you are agreeing to our <span> Terms and Services </span></p>
 </form>
@@ -163,7 +183,20 @@
     </p>
   </footer>
 
-  <script></script>
+  <script>
+    function validar(){
+    var nome = form1.nome.value
+    var sobrenome = form1.lastname.value
+
+      if(nome=='') {
+        var msg = document.querySelector('.msg-erro-nome')
+        msg.append('First name cannot be empty')
+        form1.nome.focus()
+        return false
+      }}
+    
+
+  </script>
 
 </body>
 </html>
